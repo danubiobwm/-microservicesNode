@@ -27,6 +27,7 @@ export class Notification {
   public set recipientId(recipientId: string) {
     this.props.recipientId = recipientId;
   }
+
   public get recipientId(): string {
     return this.props.recipientId;
   }
@@ -34,6 +35,7 @@ export class Notification {
   public set content(content: Content) {
     this.props.content = content;
   }
+
   public get content(): Content {
     return this.props.content;
   }
@@ -41,15 +43,31 @@ export class Notification {
   public set category(category: string) {
     this.props.category = category;
   }
+
   public get category(): string {
     return this.props.category;
   }
+
   public read() {
     this.props.readAt = new Date();
   }
+
+  public unread() {
+    this.props.readAt = null;
+  }
+
   public get readAt(): Date | null | undefined {
     return this.props.readAt;
   }
+
+  public cancel() {
+    this.props.canceledAt = new Date();
+  }
+
+  public get canceledAt(): Date | null | undefined {
+    return this.props.canceledAt;
+  }
+
   public get createdAt(): Date {
     return this.props.createdAt;
   }
