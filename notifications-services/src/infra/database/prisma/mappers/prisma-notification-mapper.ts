@@ -24,8 +24,8 @@ export class PrismaNotificationMapper {
         readAt: raw.readAt,
         canceledAt: raw.canceledAt,
         createdAt: raw.createdAt,
-      }
-      // raw.id
+      },
+      raw.id
     );
   }
 }
