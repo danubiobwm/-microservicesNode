@@ -1,0 +1,17 @@
+{
+  "name": "kafka-procucer",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "kafka-procucer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"ERROR: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Danubio",
+  "license": "ISC",
+
+  "dependencies": {
+    "kafkajs": "^2.2.3"
+  }
+}
